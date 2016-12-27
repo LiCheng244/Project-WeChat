@@ -1,0 +1,23 @@
+//
+//  WeChat-Prefix.pch
+//  LCWeChat
+//
+//  Created by LiCheng on 16/1/17.
+//  Copyright © 2016年 LiCheng. All rights reserved.
+//
+
+#ifndef WeChat_Prefix_pch
+#define WeChat_Prefix_pch
+
+#import "LCAccount.h"
+#import "XMPPTool.h"
+#import "MBProgressHUD+MJ.h"
+
+    // 自定义日志, 输出格式: 加上了 @"%s",__func__
+
+    #ifdef DEBUG
+    #define LCLog(...) NSLog(@"%s\n %@\n\n",__func__, [NSString stringWithFormat:__VA_ARGS__])
+    #else
+    #endif
+
+#endif
